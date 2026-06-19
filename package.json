@@ -1,0 +1,27 @@
+{
+  "name": "hyperframes-template-videos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio src/index.tsx",
+    "render": "node scripts/render-all.mjs",
+    "render:notification": "remotion render src/index.tsx notification-popup dist/notification-popup.mp4",
+    "render:chat": "remotion render src/index.tsx chat-message dist/chat-message.mp4",
+    "render:social": "remotion render src/index.tsx social-proof dist/social-proof.mp4",
+    "render:alert": "remotion render src/index.tsx alert-banner dist/alert-banner.mp4",
+    "render:product": "remotion render src/index.tsx product-update dist/product-update.mp4",
+    "render:reminder": "remotion render src/index.tsx reminder-card dist/reminder-card.mp4",
+    "render:cta": "remotion render src/index.tsx call-to-action dist/call-to-action.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.301",
+    "@remotion/player": "^4.0.301",
+    "remotion": "^4.0.301"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "typescript": "^5.9.2"
+  }
+}
